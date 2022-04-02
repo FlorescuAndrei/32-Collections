@@ -12,8 +12,10 @@ This project contains 5 packages:
 
 
 Collections Interface Implementation:  
-<img src="box/Collections_Interface_Implementation.png" width="400" height="300" />  
+<img src="box/Collections_Interface_Implementation.png" width="600" height="200" /> 
 
+|test|test|
+| -------- | ----------- |
 | **Map** Interface<br>key/value pairs(HashTable DataStructure for Java)<br>Map<Key, Value><br>No duplicate keys | **HashMap** implementation<br> Map implementation<br>No order | **LinkedHashMap**<br>Order HashMap | **TreeMap**<br>Sorted Map|  
 | **Set** Interface<br>Set<Value><br> **No duplicate** objects | **HashSet** Implementation<br>**No order**<br>Is backed up by an HashMap with key as the element and a dummy object as value | **LinkedHashSet**<br>**Order** HashSet | **TreeSet** <br> **Sorted** Set
 
