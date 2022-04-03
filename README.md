@@ -156,7 +156,7 @@ Asymmetric difference:  a-b != b-a:
 Symmetric difference = the elements that appear in one set and another but not both.      
 Symmetric difference = union – intersection. Green and blue words.   
    
-Bulk Operations  
+**Bulk Operations**  
 -  .addAll()	- union get all elements, no duplicates  
 -  .retainAll()	- intersection get all elements that are in both sets  
 -  .removeAll	- difference: set1-set2  
