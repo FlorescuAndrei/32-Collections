@@ -10,6 +10,10 @@ This project contains 5 packages:
 -  4 create a map with location and direction for a game using Map interface and HashMap implementation;  
 -  5 create a solar system representation using Set interface and HashSet implementation.   
 
+Mobile phone example: we have an ArrayList of Contacts. We can add, rename, remove contacts. Example of using Scanner to get data from the console. Menu example.    
+
+PlayList example: We have a Linked List of Song objects. We can “play a song”, go to the next, go to previous, delete. Example of how to iterate through the list using List Iterator.  
+
 [BACK TO START PAGE](https://github.com/FlorescuAndrei/Start.git)  
 
 Collections Interface Implementation:  
