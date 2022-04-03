@@ -44,7 +44,7 @@ When use .next()  return current position and move to the next one.
 ListIterator extends Iterator from java.util package.    
 <img src="box/Iterator_position.png"/>    
 
-Collections Methods:  
+**Collections Methods:** 
 -	Collections.sort(list)  
 -	Collections.reverse(list)  
 -	Collections.shuffle(list)  
@@ -58,7 +58,7 @@ Collections Methods:
    
 **Comparable interface vs Comparator**  
 Needed to  sort the elements of a collection 
--	Comparable interface: the objects to be sorted must implement Comparable**<T>**     
+-	Comparable interface: the objects to be sorted must implement Comparable**<T,>**     
 Override compareTo()method  
 **Collections.sort(list)**  
    
@@ -87,13 +87,7 @@ Example of use: Vocabulary(letter, word). AdventureGame project - locations(dire
 Methods:  
 -  add(), remove(), size() , isEmpty()...  
    
-Bulk Operations  
--  .addAll()	- union get all elements, no duplicates  
--  .retainAll()	- intersection get all elements that are in both sets  
--  .removeAll	- difference: set1-set2  
--  .containsAll	- test if one set is a superset of another  - non distructive  
-Bulk Operations  
-The Collections framework has always provided a number of so-called "bulk operations" as part of its API. These include methods that operate on entire collections, such as containsAll, addAll, removeAll, etc. Do not confuse those methods with the aggregate operations that were introduced in JDK 8. The key difference between the new aggregate operations and the existing bulk operations (containsAll, addAll, etc.) is that the old versions are all mutative, meaning that they all modify the underlying collection. In contrast, the new aggregate operations do not modify the underlying collection. When using the new aggregate operations and lambda expressions, you must take care to avoid mutation so as not to introduce problems in the future, should your code be run later from a parallel stream.    
+   
    
     
 Set<type> - Interface  	HashSet – Implementation of Set interface. No order.  No duplicates  
@@ -103,6 +97,16 @@ List is an order collection that can contain duplicates;
 Some sets have order: Treeset, LinkedHashSet.    
    
  --------------------------------  
+   
+Bulk Operations  
+-  .addAll()	- union get all elements, no duplicates  
+-  .retainAll()	- intersection get all elements that are in both sets  
+-  .removeAll	- difference: set1-set2  
+-  .containsAll	- test if one set is a superset of another  - non distructive  
+Bulk Operations  
+The Collections framework has always provided a number of so-called "bulk operations" as part of its API. These include methods that operate on entire collections, such as containsAll, addAll, removeAll, etc. Do not confuse those methods with the aggregate operations that were introduced in JDK 8. The key difference between the new aggregate operations and the existing bulk operations (containsAll, addAll, etc.) is that the old versions are all mutative, meaning that they all modify the underlying collection. In contrast, the new aggregate operations do not modify the underlying collection. When using the new aggregate operations and lambda expressions, you must take care to avoid mutation so as not to introduce problems in the future, should your code be run later from a parallel stream.  
+   
+   -------------------------------------------------------
 
 Set has no order and no duplicates. If we want a collection with no duplicates we go for sets;
 If we want to get all unique items in a collection can use a Set
